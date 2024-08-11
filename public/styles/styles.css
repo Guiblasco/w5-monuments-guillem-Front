@@ -53,6 +53,7 @@ a {
 }
 
 .navigation-menu__list-item {
+  display: felx;
   width: 300px;
   gap: 10px;
   margin: 20px 0px;
