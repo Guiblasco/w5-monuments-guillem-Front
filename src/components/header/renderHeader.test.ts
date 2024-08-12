@@ -1,4 +1,4 @@
-import renderHeader from "../renderHeader.js";
+import renderHeader from "./renderHeader.js";
 
 describe("Given de header component", () => {
   describe("When it is rendered", () => {

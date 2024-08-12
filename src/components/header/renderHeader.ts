@@ -10,7 +10,7 @@ const renderHeader = (): HTMLElement => {
   header.innerHTML = `
     <h1 class="main-heading">Monuments</h1>
     ${navigationMenu.outerHTML}
-    `;
+  `;
 
   return header;
 };
