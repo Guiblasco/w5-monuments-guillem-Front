@@ -1,4 +1,4 @@
-import renderNavigatorMenu from "./renderNavigatorMenu";
+import renderNavigatorMenu from "./renderNavigatorMenu.js";
 
 describe("Given the navigator menu component", () => {
   describe("When it is rendered", () => {
