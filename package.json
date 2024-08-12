@@ -15,7 +15,8 @@
     "build:dev": "tsc -w",
     "prepare": "husky",
     "test:dev": "jest --watch",
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -39,5 +40,8 @@
     "serve": "^14.2.3",
     "ts-jest": "^29.2.4",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "ts-jest-resolver": "^2.0.1"
   }
 }
