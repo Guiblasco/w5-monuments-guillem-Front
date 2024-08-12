@@ -1,11 +1,11 @@
-import renderNavigationMenu from "../navigatorMenu/renderNavigatorMenu.js";
+import renderNavigatorMenu from "../navigatorMenu/renderNavigatorMenu.js";
 
 const renderHeader = (): HTMLElement => {
   const header = document.createElement("header");
 
   header.classList.add("header");
 
-  const navigationMenu = renderNavigationMenu();
+  const navigationMenu = renderNavigatorMenu();
 
   header.innerHTML = `
     <h1 class="main-heading">Monuments</h1>
