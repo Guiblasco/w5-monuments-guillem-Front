@@ -8,10 +8,22 @@ describe("Given the navigator menu component", () => {
       const navigatorMenu = renderNavigatorMenu();
 
       screen.appendChild(navigatorMenu);
-      const listItem = screen.querySelector("li");
+      const listItems = screen.querySelectorAll("a");
 
-      expect(listItem).not.toBeNull();
-      expect(listItem?.textContent).toBe(expectedTextListMonuments);
+      expect(listItems[0]).not.toBeNull();
+      expect(listItems[0]?.textContent).toBe(expectedTextListMonuments);
+    });
+
+    test("Then it should show Create Monumets as text", () => {
+      const screen = document.createElement("div");
+      const expectedTextCreateMonuments = "Create monument";
+      const navigatorMenu = renderNavigatorMenu();
+
+      screen.appendChild(navigatorMenu);
+      const listItems = screen.querySelectorAll("a");
+
+      expect(listItems[1]).not.toBeNull();
+      expect(listItems[1].textContent).toBe(expectedTextCreateMonuments);
     });
   });
 });
