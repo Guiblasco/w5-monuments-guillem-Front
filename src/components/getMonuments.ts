@@ -1,4 +1,6 @@
 export const getMonuments = async (path: string): Promise<Response> => {
-  const apiResponse = await fetch(`http://localhost:3001/${path}`);
+  const apiResponse = await fetch(
+    `https://w5-monuments-guillem.onrender.com/${path}`,
+  );
   return (await apiResponse.json()) as Response;
 };
