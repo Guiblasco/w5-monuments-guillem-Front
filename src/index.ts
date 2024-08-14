@@ -1,5 +1,7 @@
-import renderApp from "./components/app/renderApp.js";
-import { getMonuments } from "./components/getMonuments.js";
+import renderApp from "./monuments/components/app/renderApp.js";
+import { getMonuments } from "./monuments/components/getMonuments.js";
+import "@fontsource/nanum-gothic";
+import "./styles/styles.css";
 
 const root = document.querySelector(".root");
 
