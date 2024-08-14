@@ -11,6 +11,7 @@ if (!root) {
 
 const app = renderApp();
 
-await getMonuments("monuments");
-
-root.appendChild(app);
+(async () => {
+  await getMonuments("monuments");
+  root.appendChild(app);
+})();
