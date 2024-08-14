@@ -1,7 +1,7 @@
 {
   "name": "w5-monuments-guillem-front",
   "version": "1.0.0",
-  "main": "public/index.js",
+  "main": "dist/index.js",
   "type": "module",
   "lint-staged": {
     "*.{ts,tsx}": [
@@ -10,9 +10,9 @@
     ]
   },
   "scripts": {
-    "start": "serve public",
-    "build": "tsc",
-    "build:dev": "tsc -w",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
     "prepare": "husky",
     "test:dev": "jest --watch",
     "test": "jest",
@@ -40,9 +40,11 @@
     "prettier": "^3.3.3",
     "serve": "^14.2.3",
     "ts-jest": "^29.2.4",
-    "typescript": "^5.5.4"
+    "ts-jest-resolver": "^2.0.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.0"
   },
   "dependencies": {
-    "ts-jest-resolver": "^2.0.1"
+    "@fontsource/nanum-gothic": "^5.0.18"
   }
 }
