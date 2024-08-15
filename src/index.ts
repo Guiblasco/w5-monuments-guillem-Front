@@ -1,5 +1,5 @@
 import renderApp from "./monuments/components/app/renderApp.js";
-import { getMonuments } from "./monuments/components/getMonuments.js";
+import { getMonuments } from "./monuments/api/getMonuments.js";
 import "@fontsource/nanum-gothic";
 import "./styles/styles.css";
 
