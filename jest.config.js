@@ -6,5 +6,5 @@ export default {
   },
   resolver: "ts-jest-resolver",
   testMatch: ["**/src/**/*.test.ts"],
-  collectCoverageFrom: ["src/**/*.ts", "!src/index.ts"],
+  collectCoverageFrom: ["src/**/*.ts", "!src/index.ts", "!src/**/*.d.ts"],
 };
