@@ -1,5 +1,4 @@
 import renderApp from "./monuments/components/app/renderApp.js";
-import { getMonuments } from "./monuments/api/getMonuments.js";
 import "@fontsource/nanum-gothic";
 import "./styles/styles.css";
 
@@ -9,9 +8,7 @@ if (!root) {
   throw new Error("Root element not found");
 }
 
-const app = renderApp();
-
 (async () => {
-  await getMonuments("monuments");
+  const app = await renderApp();
   root.appendChild(app);
 })();
