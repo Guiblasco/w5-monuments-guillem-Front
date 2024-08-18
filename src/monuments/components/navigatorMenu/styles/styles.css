@@ -1,0 +1,37 @@
+.navigator-menu {
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+}
+
+.navigator-list {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0px;
+  font-size: 1rem;
+
+  @media (width >= 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.navigator-list__item {
+  font-weight: bolder;
+  max-width: max-content;
+  color: #900629;
+
+  @media (width >= 600px) {
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.navigator-list__item--active {
+  border-bottom: 2px solid #900629;
+
+  &:hover {
+    color: #000;
+  }
+}

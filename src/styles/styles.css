@@ -25,81 +25,13 @@ a {
   color: inherit;
 }
 
-.app-container {
-  margin: 0 auto;
-  max-width: 1000px;
-  padding: 2rem 40px;
-}
 
-.header {
-  display: flex;
-  border-bottom: 3px solid #900629;
-  justify-content: space-between;
-  align-items: center;
-  @media (width <= 600px) {
-    min-height: 70px;
-    flex-direction: column;
-    border-bottom: 3px solid #900629;
-    display: flex;
-    
-  }
-  
-}
 
-.main-heading {
-  padding: 20px 40px;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-}
 
-.navigator-menu {
-  padding: 0px 40px;
-  display: flex;
-  align-items: center;
-}
 
-.navigator-list {
-  display: flex;
-  gap: 10px;
-  margin: 20px 0px;
-  font-size: 1rem;
 
-  @media (width >= 600px) {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
 
-.navigator-list__item {
-  font-weight: bolder;
-  max-width: max-content;
-  color: #900629;
 
-  @media (width >= 600px) {
-    &:hover {
-      color: #000;
-    }
-  }
-}
 
-.navigator-list__item--active {
-  border-bottom: 2px solid #900629;
 
-  &:hover {
-    color: #000;
-  }
-}
 
-.card-list{
-  padding: 15px 0;
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
-}
-
-.card-list__card {
-  height: 250px;
-  border: 1px solid #000;
-  border-radius: 15px;
-  padding: 20px;
-}
