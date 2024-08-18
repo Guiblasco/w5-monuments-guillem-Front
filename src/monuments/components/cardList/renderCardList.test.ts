@@ -12,7 +12,6 @@ describe("Given the function renderCardList", () => {
           city: "",
           country: "",
           description: "",
-          id: "",
           imageUrl: "",
         },
         {
@@ -20,7 +19,6 @@ describe("Given the function renderCardList", () => {
           city: "",
           country: "",
           description: "",
-          id: "",
           imageUrl: "",
         },
       ];

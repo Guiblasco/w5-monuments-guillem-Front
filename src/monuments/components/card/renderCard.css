@@ -1,6 +1,22 @@
 .card-list__card {
-  height: 250px;
   border: 1px solid #000;
   border-radius: 15px;
   padding: 20px;
+  text-align: start;
 }
+
+.card__country {
+  font-style: italic;
+  display: block;
+  text-align: right;
+  margin: 5px 10px;
+}
+
+.card__city {
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0;
+}
+
