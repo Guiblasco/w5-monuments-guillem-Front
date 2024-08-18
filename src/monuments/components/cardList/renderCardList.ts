@@ -1,6 +1,6 @@
 import type { Monument } from "../../types";
 import { renderCard } from "../card/renderCard";
-import "./styles/styles.css";
+import "./renderCardList.css";
 
 export const renderCardList = (monuments: Monument[]): HTMLElement => {
   const cardList = document.createElement("ul");

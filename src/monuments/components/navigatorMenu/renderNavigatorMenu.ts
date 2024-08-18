@@ -1,4 +1,4 @@
-import "./styles/styles.css";
+import "./renderNavigatorMenu.css";
 
 const renderNavigatorMenu = (): HTMLElement => {
   const navigatorMenu = document.createElement("nav");
