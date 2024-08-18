@@ -1,5 +1,4 @@
-.navigator-menu {
-  padding: 0px 40px;
+.navigator-menu { 
   display: flex;
   align-items: center;
 }

@@ -1,5 +1,5 @@
 import renderNavigatorMenu from "../navigatorMenu/renderNavigatorMenu.js";
-import "./styles/styles.css";
+import "./renderHeader.css";
 
 const renderHeader = (): HTMLElement => {
   const header = document.createElement("header");
