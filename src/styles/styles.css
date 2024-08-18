@@ -13,13 +13,11 @@ h1 {
   margin: 0;
 }
 
-ul {
+ul, li {
   margin: 0;
   padding: 0;
-}
-
-li {
   list-style-type: none;
+
 }
 
 a {
@@ -30,18 +28,22 @@ a {
 .app-container {
   margin: 0 auto;
   max-width: 1000px;
+  padding: 2rem 40px;
 }
 
 .header {
-  padding: 40px;
+  display: flex;
   border-bottom: 3px solid #900629;
-
-  @media (width >= 600px) {
+  justify-content: space-between;
+  align-items: center;
+  @media (width <= 600px) {
+    min-height: 70px;
+    flex-direction: column;
     border-bottom: 3px solid #900629;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
   }
+  
 }
 
 .main-heading {
@@ -70,6 +72,7 @@ a {
 
 .navigator-list__item {
   font-weight: bolder;
+  max-width: max-content;
   color: #900629;
 
   @media (width >= 600px) {
@@ -85,4 +88,18 @@ a {
   &:hover {
     color: #000;
   }
+}
+
+.card-list{
+  padding: 15px 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+
+.card-list__card {
+  height: 250px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 20px;
 }
